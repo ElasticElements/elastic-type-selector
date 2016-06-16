@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+    <title>type-selector Demo</title>
+    <script src="../../webcomponentsjs/webcomponents-lite.min.js"></script>
+    <link rel="import" href="../../elastic-client/elastic-client.html">
+    <link rel="import" href="../type-selector.html">
+
+  </head>
+  <body unresolved>
+    <template is="dom-bind">
+
+      <type-selector
+          selected-type="{{selected}}"
+          available-types='[{"displayName":"ALL", "typeName":""}, 
+          {"displayName":"advertizement", "typeName":"ad"},
+          {"displayName":"blog post", "typeName":"blog post"},
+          {"displayName":"Lawn Mowers", "typeName":"mowers"}]'
+          types="{{exportedTypes}}">
+      </type-selector>
+
+      <p><span>Selected type: </span>{{selected}}</p>
+      <p><span>Elastic Type Array: </span>[{{exportedTypes}}]</p>
+    </template>
+  </body>
+</html>

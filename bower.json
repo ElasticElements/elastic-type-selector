@@ -1,0 +1,30 @@
+{
+  "name": "type-selector",
+  "version": "0.0.1",
+  "authors": [
+    "David Flynt"
+  ],
+  "description": "An element that renders a dropdown to allow for selection of a type",
+  "keywords": [
+    "Elasticsearch",
+    "elastic",
+    "ElasticUI",
+    "web-component",
+    "polymer"
+  ],
+  "main": "type-selector.html",
+  "license": "http://polymer.github.io/LICENSE.txt",
+  "homepage": "https://github.com/ElasticElements/type-selector",
+  "ignore": [
+    "/.*",
+    "/test/"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.2.0",
+    "paper-elements": "PolymerElements/paper-elements#^1.0.1",
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "web-component-tester": "^4.0.0"
+  }
+}
